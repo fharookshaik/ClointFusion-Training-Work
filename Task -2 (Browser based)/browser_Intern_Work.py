@@ -3,7 +3,7 @@ Browser Based Training Task -2
 
 Today's task is to order these 2 headsets from flipkart just go till the payment option (Don't Pay for this) and close the browser.
 
-Note:- But not using Browser functions. Use images , mouse click and keyboard functions.
+Note:- But not using Browser functions. Use images, mouse click and keyboard functions.
 
 1:- boAt Airdopes 131 Bluetooth Headset
 2:- boAt Airdopes 402 Bluetooth Headset
@@ -25,13 +25,13 @@ Important Things to be Noted:
             ii. Uncomment the line 79
 5. You should've pre-logged into Flipkart and you should have one atlest address and one 
    card saved in your account.
-6. Please don't do anything whill the code is executing as it needs some inforamtion 
-   attained by screenscraping,from mouse coordinates and keyboardthings.
+6. Please don't do anything while the code is executing as it needs some information 
+   attained by screenscraping, from mouse coordinates and keyboard things.
 7. Since the following code didn't use any of the browser automation functions, it needs 
     some images to identify the mouse coordinates.
 8. Make sure that the images folder is present within the current working directory.
 9. Some repeated things are written by new functions. No need to worry about that.
-10. While executing the code you'll prompted to select the newely opened tab/ browser. This 
+10. While executing the code you'll prompted to select the newly opened tab/ browser. This 
     helps giving a better information to code to handle things carefully.
 
 
@@ -132,4 +132,4 @@ if __name__ == "__main__":
     coordinates = return_coordinates('images/close.png')
     click_mouse(coordinates,'single')
 
-    print("Success",cf.show_emoji())
+    cf.message_flash(msg=f'Success {cf.show_emoji()}',delay=3)
