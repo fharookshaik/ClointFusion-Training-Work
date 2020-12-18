@@ -81,6 +81,8 @@ def setupMail():
     details = read_config()
     email = details['emailid']
     password = details['password']
+    # email = cf.gui_get_any_input_from_user(msgForUser='Email: ')
+    # password = cf.gui_get_any_input_from_user(msgForUser='Password',password=True)
 
     cf.launch_website_h('https://outlook.live.com/owa/')
     cf.browser_wait_until_h(text='Sign in')
